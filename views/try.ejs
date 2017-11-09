@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Editor</title>
+  </head>
+  <body>
+      <form action="/" method="post">
+        <div>
+          <label for="lang" name="lang" style="margin-left : 250px">Select Your Language:</label>
+          <select name="lang" id="lang">
+            <option value="Java">JAVA</option>
+            <option value="Python">Python</option>
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="VB">VB</option>
+            <option value="Chash">C#</option>
+          </select>
+        </div>
+        <div style="margin-left : 250px" style="padding-down:250px" >
+          <label for="code">Code Section</label>
+           <textarea rows="5" cols="50" placeholder="Enter Your Code here....." name="code" id="code"></textarea><br></br>
+        </div>
+        <div style="margin-left : 250px" style="padding-down:250px">
+          <label for="input">Inputs here</label>
+          <input type="text" placeholder="Inputs here if any.." name="input" id="input" />
+        </div>
+        <input type="submit" value="Execute Query" style="margin-left : 250px" style="padding-down:250px">
+
+      </form>
+      <form action="/uploadProcess.php" method="post" enctype="multipart/form-data">
+        <div>
+          <input type="submit" value="Upload" name="Upload" style="margin-left : 250px" style="padding-down:250px"/>
+        </div>
+      </form>
+  </body>
+</html>
